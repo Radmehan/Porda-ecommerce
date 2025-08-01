@@ -321,7 +321,7 @@ section .header {
 # Section Catagory
 --------------------------------------------------------------*/
 section.catagories {
-    min-height: 70vh;
+    min-height: 50vh;
 }
 
 .cat-items-wrap {
@@ -344,6 +344,7 @@ section.catagories {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   padding: 15px 0px;
   align-items: center;
+  justify-content: center;
 }
 
 .cat-item .cat-icon {

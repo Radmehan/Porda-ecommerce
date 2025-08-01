@@ -320,6 +320,10 @@ section .header {
 /*--------------------------------------------------------------
 # Section Catagory
 --------------------------------------------------------------*/
+section.catagories {
+    min-height: 70vh;
+}
+
 .cat-items-wrap {
   display: flex;
   flex-wrap: wrap;

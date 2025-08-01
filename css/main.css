@@ -369,9 +369,16 @@ section .header {
 }
 
 
+/*--------------------------------------------------------------
+# Album
+--------------------------------------------------------------*/
+p.card-text {
+    font-weight: 700;
+}
 
-
-/* footer */
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
 .site-footer {
   background: #f1f3fc;
   font-size: 14px;
@@ -497,8 +504,38 @@ section .header {
   border: 2px solid #00204a;
 }
 
+.whapp {
+  position: relative;
+}
+
+.whapp .list-unstyled {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  transform: translate(0%, -50%);
+  z-index: 1;
+}
+
+.popover-dark-bold {
+  background: #f4f6f8;
+  color: var(--color-primary);
+  font-weight: 700;
+  border: none;
+}
+.popover-dark-bold .popover-arrow::before {
+  border-color: #343a40;
+}
 
 
+.whapp .list-unstyled i {
+  color: #044b48;
+  font-size: 29px;
+}
+
+.whapp .list-unstyled a{
+  background: #c7c7c7;
+}
+    
 
 /* contact */
 .rounded {
@@ -509,3 +546,8 @@ section .header {
 .rounded i {
   color: var(--color-secondary);
 }
+
+
+/*--------------------------------------------------------------
+# Shop
+--------------------------------------------------------------*/

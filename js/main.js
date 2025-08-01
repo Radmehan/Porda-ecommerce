@@ -141,7 +141,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-  // single home or villa or apartment
+  // produce view
   const mainImg = document.getElementById('main-img');
   const thumbs_img = document.querySelectorAll('.thumb-img');
 
@@ -155,3 +155,12 @@ document.addEventListener("DOMContentLoaded", function () {
       this.classList.add('active');
     });
   });
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    let popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+    let popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl);
+    });
+  });
+

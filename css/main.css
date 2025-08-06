@@ -72,10 +72,59 @@ h6 {
   border: 2px solid rgb(255 0 0 / 10%);
 }
 
-.get-btn:hover {
+.get-btn,.cart-btn:hover {
   background: rgb(255 255 255 / 5%);
   border: 2px solid rgb(239 0 0 / 10%);
   color: var(--color-secondary);
+}
+
+/* add to cart button */
+.cart-btn {
+    font-family: var(--font-primary);
+    border: 1px solid;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: var(--color-primary);
+    /* display: inline-block; */
+    padding: 10px 35px;
+    /* border-radius: 50px; */
+    transition: 0.3s;
+    /* color: #fff; */
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 15px rgb(255 0 0 / 8%);
+    border: 2px solid rgb(255 0 0 / 10%);
+}
+
+/* email submit button */
+.sub-btn {
+  font-family: var(--font-primary);
+  border: 1px solid;
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: var(--color-primary);
+  /* display: inline-block; */
+  padding: 14px 40px;
+  /* border-radius: 50px; */
+  transition: 0.3s;
+  /* color: #fff; */
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 15px rgb(255 0 0 / 8%);
+  border: 2px solid rgb(255 0 0 / 10%);
+}
+
+.sub-btn:hover {
+  background: rgb(255 255 255 / 5%);
+  border: 2px solid rgb(239 0 0 / 10%);
+  color: var(--color-secondary);
+}
+
+.search:hover {
+  /* background: rgb(255 255 255 / 5%); */
+  border: 1px solid rgb(239 0 0 / 10%);
+  color: var(--color-secondary);
+  background: var(--color-default);
 }
 
 /*--------------------------------------------------------------
@@ -321,7 +370,7 @@ section .header {
 # Section Catagory
 --------------------------------------------------------------*/
 section.catagories {
-    min-height: 50vh;
+  min-height: 50vh;
 }
 
 .cat-items-wrap {
@@ -342,7 +391,7 @@ section.catagories {
   background: var(--color-secondary);
   border-radius: 15px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  padding: 15px 0px;
+  padding: 0px 0px;
   align-items: center;
   justify-content: center;
 }
@@ -355,8 +404,9 @@ section.catagories {
 
 .cat-item p {
   color: var(--color-default);
-  padding: 15px;
-  margin-top: 8px;
+  padding: 10px;
+  margin-top: 10px;
+  font-weight: 700;
 }
 
 .bd-placeholder-img {
@@ -378,8 +428,18 @@ section.catagories {
 # Album
 --------------------------------------------------------------*/
 p.card-text {
-    font-weight: 700;
+  font-weight: 700;
 }
+
+
+/*--------------------------------------------------------------
+# Banner
+--------------------------------------------------------------*/
+.banner-image img {
+  border-radius: 25px;
+}
+
+
 
 /*--------------------------------------------------------------
 # Footer
@@ -432,7 +492,7 @@ p.card-text {
 }
 
 .site-footer .widget .links {
-  width: 150px;
+  width: 100%;
 }
 
 .site-footer .widget .links li {
@@ -448,7 +508,7 @@ p.card-text {
   width: 40px;
   height: 40px;
   position: relative;
-  background: #ccc;
+  background: #cccccc5c;
   border-radius: 40%;
 }
 
@@ -460,6 +520,7 @@ p.card-text {
   position: absolute;
   top: 50%;
   left: 50%;
+  font-size: 23px;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -489,7 +550,7 @@ p.card-text {
 }
 
 .social a span {
-  font-size: 13px;
+  /* font-size: 13px; */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -509,11 +570,20 @@ p.card-text {
   border: 2px solid #00204a;
 }
 
-.whapp {
+i.fa-brands.fa-facebook {
+    color: #1877F2;
+}
+
+i.fa-brands.fa-square-whatsapp {
+    color: #25D366;
+    font-size: 25px;
+}
+
+.chatbox {
   position: relative;
 }
 
-.whapp .list-unstyled {
+.chatbox .list-unstyled {
   position: fixed;
   right: 0;
   bottom: 0;
@@ -527,20 +597,29 @@ p.card-text {
   font-weight: 700;
   border: none;
 }
+
 .popover-dark-bold .popover-arrow::before {
   border-color: #343a40;
 }
 
-
-.whapp .list-unstyled i {
-  color: #044b48;
-  font-size: 29px;
+.d-inline-block {
+    display: inline-block !important;
 }
 
-.whapp .list-unstyled a{
-  background: #c7c7c7;
+span .chatbox {
+  top:60% !important;
 }
-    
+
+.chatbox .list-unstyled i {
+  font-size: 22px;
+  color: var(--color-default);
+}
+
+.chatbox .list-unstyled a {
+    border-radius: 50%;
+    background: #25D366;
+}
+
 
 /* contact */
 .rounded {
@@ -550,6 +629,19 @@ p.card-text {
 
 .rounded i {
   color: var(--color-secondary);
+}
+
+.form-control input{
+  /* border: 0px !important; */
+}
+
+/* .mt-3 {
+    margin-top: 1.5rem !important;
+} */
+
+textarea#message {
+    /* padding: .375rem .75rem; */
+    /* border-radius: var(--bs-border-radius); */
 }
 
 

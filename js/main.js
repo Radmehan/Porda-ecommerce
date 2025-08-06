@@ -164,3 +164,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+//    function toggleContacts() {
+//         const contactDiv = document.getElementById("contactOptions");
+//         contactDiv.style.display = (contactDiv.style.display === "flex") ? "none" : "flex";
+//     }
+
+  function toggleContacts() {
+        const contactDiv = document.getElementById("contactOptions");
+        contactDiv.classList.toggle("show");
+  }
+

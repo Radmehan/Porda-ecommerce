@@ -579,7 +579,7 @@ i.fa-brands.fa-square-whatsapp {
     font-size: 25px;
 }
 
-.chatbox {
+/* .chatbox {
   position: relative;
 }
 
@@ -589,7 +589,7 @@ i.fa-brands.fa-square-whatsapp {
   bottom: 0;
   transform: translate(0%, -50%);
   z-index: 1;
-}
+} */
 
 .popover-dark-bold {
   background: #f4f6f8;
@@ -606,7 +606,7 @@ i.fa-brands.fa-square-whatsapp {
     display: inline-block !important;
 }
 
-span .chatbox {
+/* span .chatbox {
   top:60% !important;
 }
 
@@ -618,6 +618,69 @@ span .chatbox {
 .chatbox .list-unstyled a {
     border-radius: 50%;
     background: #25D366;
+} */
+
+
+.chatbox {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.chat-btn {
+    background-color: #6bc785;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.contact-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 73px;
+    right: 2px;
+    
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(20px);
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-icons.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.contact-icons a,
+.contact-icons button {
+    background-color: #25d366;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.contact-icons .close-btn {
+    background-color: #6bc785;
+}
+
+a.whatsapp {
+    font-size: 33px;
 }
 
 

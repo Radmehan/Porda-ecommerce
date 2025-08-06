@@ -475,17 +475,45 @@
         </div>
     </section>
     <!-- end banner -->
-    <div class="chatbox">
+    <!-- <div class="chatbox">
+        
         <ul class="list-unstyled social">
             <li>
                 <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
                     data-bs-placement="bottom" data-bs-content="Contact Us" data-bs-custom-class="popover-dark-bold">
-                    <a href="https://api.whatsapp.com/send?phone=9710562892251"><span class="chatbox"><i
+                    <a href=""><span class="chatbox"><i
                                 class="fa-solid fa-message"></i></span></a>
                 </span>
 
             </li>
-    </div>
+        </ul>
+    </div> -->
+
+    <div class="chatbox">
+    <ul class="list-unstyled social">
+        <li>
+            <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                data-bs-placement="bottom" data-bs-content="Contact Us" data-bs-custom-class="popover-dark-bold">
+                <button onclick="toggleContacts()" class="chat-btn">
+                    <i class="fa-solid fa-message"></i>
+                </button>
+            </span>
+        </li>
+    </ul>
+
+    <div id="contactOptions" class="contact-icons">
+    <a href="https://wa.me/9710562892251" target="_blank" class="whatsapp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <a href="tel:+9710562892251" class="call">
+        <i class="fa-solid fa-phone"></i>
+    </a>
+    <button onclick="toggleContacts()" class="close-btn">
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+</div>
+</div>
+
 
     <!-- footer -->
     <div class="site-footer">
